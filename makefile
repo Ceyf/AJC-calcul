@@ -12,7 +12,7 @@ testTXT: ${TARGET}
 	./${TARGET} < tests.txt
 
 testPROG: test.c ${FILES}
-	${CC} ${FLAGS} -o test test.c ${FILES}
+	${CC} ${FLAGS} -o test ${FILES} test.c 
 	./test
 
 deploy: main.c ${FILES}
