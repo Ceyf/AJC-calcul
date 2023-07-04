@@ -1,3 +1,3 @@
 FROM scratch
 COPY exoMake .
-ENTRYPOINT ["./exoMake"]
+ENTRYPOINT ["exoMake"]
