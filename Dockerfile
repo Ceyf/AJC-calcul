@@ -1,4 +1,4 @@
 FROM scratch
 COPY exoMake .
-ENTRYPOINT ["ls"]
+ENTRYPOINT ["sh", "ls"]
 #ENTRYPOINT ["exoMake"]
