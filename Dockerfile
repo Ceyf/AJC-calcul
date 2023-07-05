@@ -1,4 +1,4 @@
 FROM scratch
-COPY exomake
+COPY exomake .
 ENTRYPOINT ["./exomake"]
 CMD ["5"]
