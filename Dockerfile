@@ -1,4 +1,4 @@
 FROM scratch
-COPY exoMake .
-ENTRYPOINT ["sh", "ls"]
-#ENTRYPOINT ["exoMake"]
+COPY exoMake /deploy
+ENTRYPOINT ["./deploy/exoMake"]
+
