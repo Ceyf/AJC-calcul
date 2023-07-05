@@ -1,3 +1,3 @@
 FROM debian:latest
-COPY exomake test.txt .
-ENTRYPOINT ["./exomake", "<", "test.txt"]
+COPY exomake tests.txt .
+ENTRYPOINT ["./exomake", "<", "tests.txt"]
