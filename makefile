@@ -23,7 +23,7 @@ deploy: main.c ${FILES}
 
 #Nettoyage
 clean: ${TARGET}
-	rm ${TARGET} 
-	rm deploy/${TARGET}
-	rm -rf deploy
-	rm test
+	[ -f ${TARGET} ] && rm ${TARGET} 
+#	[ -f deploy/${TARGET} ] && rm deploy/${TARGET}
+#	[ -d deploy ] && rm -rf deploy
+	[ -f test ] && rm test
