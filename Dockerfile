@@ -1,3 +1,3 @@
-FROM debian:latest
-COPY exomake tests.txt .
-ENTRYPOINT ["./exomake", "<", "tests.txt"]
+FROM scratch
+COPY exomake tests.txt /app
+ENTRYPOINT ["./app/exomake", "<", "tests.txt"]
