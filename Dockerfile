@@ -1,3 +1,3 @@
 FROM scratch
 COPY exomake tests.txt /app
-ENTRYPOINT ["./app/exomake", "<", "tests.txt"]
+ENTRYPOINT [ "cd", "app", "exomake", "<", "tests.txt" ]
